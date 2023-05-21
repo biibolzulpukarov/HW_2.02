@@ -17,29 +17,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="No7-42-Ady">
-                                <rect key="frame" x="126" y="697" width="141" height="51"/>
+                                <rect key="frame" x="146.66666666666666" y="697" width="100" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="QDy-rr-cvg"/>
-                                    <constraint firstAttribute="height" constant="51" id="RsG-sv-78b"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Xbu-Rf-o6k"/>
+                                    <constraint firstAttribute="height" constant="51" id="plN-yg-29o"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ew-wf-Z2C"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="P63-Vr-280">
-                                <rect key="frame" x="141" y="104" width="111" height="450"/>
+                                <rect key="frame" x="146.66666666666666" y="104" width="100" height="420"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faU-F9-Tpe">
-                                        <rect key="frame" x="0.0" y="0.0" width="111" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" red="0.55686277149999996" green="0.092868380418749993" blue="0.09060788165413651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="U2U-HO-JTe"/>
+                                            <constraint firstAttribute="width" constant="100" id="fgZ-lk-Da9"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ge0-CK-CNv">
-                                        <rect key="frame" x="0.0" y="170" width="111" height="110"/>
+                                        <rect key="frame" x="0.0" y="160" width="100" height="100"/>
                                         <color key="backgroundColor" red="0.97397869825363159" green="0.92688921626145226" blue="0.26356693841879264" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Svh-pT-GmA"/>
+                                            <constraint firstAttribute="width" constant="100" id="XjS-Rv-7H2"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgW-xc-pZg">
-                                        <rect key="frame" x="0.0" y="340" width="111" height="110"/>
+                                        <rect key="frame" x="0.0" y="320" width="100" height="100"/>
                                         <color key="backgroundColor" red="0.22072272440176918" green="0.86078912019729614" blue="0.27761273761824379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="2qf-NG-mgs"/>
+                                            <constraint firstAttribute="width" constant="100" id="LR0-Cm-VTd"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -47,19 +65,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="No7-42-Ady" firstAttribute="top" secondItem="P63-Vr-280" secondAttribute="bottom" constant="143" id="6o8-r1-lIB"/>
-                            <constraint firstItem="P63-Vr-280" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="E13-W2-uX1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P63-Vr-280" secondAttribute="trailing" constant="141" id="P7a-ks-4Yt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="No7-42-Ady" secondAttribute="bottom" constant="70" id="QlP-MF-Q2q"/>
-                            <constraint firstItem="No7-42-Ady" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="YUW-8e-MzL"/>
-                            <constraint firstItem="P63-Vr-280" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="YiJ-yd-VFZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="No7-42-Ady" secondAttribute="trailing" constant="126" id="rJn-2Z-Rzu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="No7-42-Ady" secondAttribute="bottom" constant="70" id="FbA-Kf-MgH"/>
+                            <constraint firstItem="P63-Vr-280" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J6R-eX-G2a"/>
+                            <constraint firstItem="No7-42-Ady" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hjS-IM-RjV"/>
+                            <constraint firstItem="P63-Vr-280" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="sZK-NN-9qF"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenColorView" destination="EgW-xc-pZg" id="dhq-Uc-8Jk"/>
-                        <outlet property="redColorView" destination="faU-F9-Tpe" id="wCT-GF-gCX"/>
-                        <outlet property="yellowColorView" destination="Ge0-CK-CNv" id="Jy6-Ss-T28"/>
+                        <outlet property="greenLightView" destination="EgW-xc-pZg" id="dhq-Uc-8Jk"/>
+                        <outlet property="redLightView" destination="faU-F9-Tpe" id="wCT-GF-gCX"/>
+                        <outlet property="startButton" destination="No7-42-Ady" id="riC-pL-XYa"/>
+                        <outlet property="yellowLightView" destination="Ge0-CK-CNv" id="Jy6-Ss-T28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,6 +84,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

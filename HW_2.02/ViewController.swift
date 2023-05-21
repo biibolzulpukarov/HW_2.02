@@ -7,18 +7,40 @@
 
 import UIKit
 
+enum LightOfTraffic {
+    case red
+    case yellow
+    case green
+}
+
 class ViewController: UIViewController {
 
-    @IBOutlet var redColorView: UIView!
-    @IBOutlet var yellowColorView: UIView!
-    @IBOutlet var greenColorView: UIView!
+    @IBOutlet var redLightView: UIView!
+    @IBOutlet var yellowLightView: UIView!
+    @IBOutlet var greenLightView: UIView!
     
+    @IBOutlet var startButton: UIButton!
+    
+    private var lightOfTraffic = LightOfTraffic.red
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        redLightView.alpha = 0.3
+        yellowLightView.alpha = 0.3
+        greenLightView.alpha = 0.3
+        
+        redLightView.layer.cornerRadius = 50
+        yellowLightView.layer.cornerRadius = 50
+        greenLightView.layer.cornerRadius = 50
+        
+        startButton.layer.cornerRadius = 10
     }
 
-
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        if startButton.currentTitle == "START" {
+            startButton.setTitle("NEXT", for: .normal)
+        }
+    }
 }
 
