@@ -56,6 +56,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="No7-42-Ady" secondAttribute="trailing" constant="126" id="rJn-2Z-Rzu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenColorView" destination="EgW-xc-pZg" id="dhq-Uc-8Jk"/>
+                        <outlet property="redColorView" destination="faU-F9-Tpe" id="wCT-GF-gCX"/>
+                        <outlet property="yellowColorView" destination="Ge0-CK-CNv" id="Jy6-Ss-T28"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

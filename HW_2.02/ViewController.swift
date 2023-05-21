@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var redColorView: UIView!
+    @IBOutlet var yellowColorView: UIView!
+    @IBOutlet var greenColorView: UIView!
     
     
     override func viewDidLoad() {
