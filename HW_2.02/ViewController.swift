@@ -41,6 +41,21 @@ class ViewController: UIViewController {
         if startButton.currentTitle == "START" {
             startButton.setTitle("NEXT", for: .normal)
         }
+        
+        switch lightOfTraffic {
+        case .red:
+            greenLightView.alpha = 0.3
+            redLightView.alpha = 1
+            lightOfTraffic = .yellow
+        case .yellow:
+            redLightView.alpha = 0.3
+            yellowLightView.alpha = 1
+            lightOfTraffic = .green
+        case .green:
+            yellowLightView.alpha = 0.3
+            greenLightView.alpha = 1
+            lightOfTraffic = .red
+        }
     }
 }
 
